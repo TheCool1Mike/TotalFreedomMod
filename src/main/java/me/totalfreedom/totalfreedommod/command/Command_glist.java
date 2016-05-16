@@ -69,6 +69,15 @@ public class Command_glist extends FreedomCommand
 
         if ("ban".equals(args[0]))
         {
+            if (reason != null) 
+            {
+                FUtil.adminAction(sender.getName(), "Banning " + username + " and IPs: " + StringUtils.join(ips, ", ") + reason, true);
+                
+                
+                
+            }
+        
+        
             FUtil.adminAction(sender.getName(), "Banning " + username + " and IPs: " + StringUtils.join(ips, ", "), true);
 
             final String reason = args.length > 2 ? StringUtils.join(args, " ", 2, args.length) : null;
