@@ -84,7 +84,7 @@ public class Command_glist extends FreedomCommand
             FUtil.adminAction(sender.getName(), "Banning " + username + " and IPs: " + StringUtils.join(ips, ", ") + ". Reason: " + reason, true);
             }
             
-            if reason = null
+            else
             {
             FUtil.adminAction(sender.getName(), "Banning " + username + " and IPs: " + StringUtils.join(ips, ", "), true);
             }
